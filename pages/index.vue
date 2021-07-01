@@ -4,10 +4,6 @@
 
 <script>
 export default {
-    methods: {
-        aa(a) {
-            let bb;
-        },
-    },
+    methods: {},
 };
 </script>
