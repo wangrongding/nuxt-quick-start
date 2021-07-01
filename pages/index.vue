@@ -1,7 +1,13 @@
 <template>
-  <Tutorial/>
+    <Tutorial />
 </template>
 
 <script>
-export default {}
+export default {
+    methods: {
+        aa(a) {
+            let bb;
+        },
+    },
+};
 </script>
