@@ -1,6 +1,6 @@
 <template>
     <!-- <Tutorial /> -->
-    <div>汪荣顶</div>
+    <div>页面2</div>
 </template>
 
 <script>

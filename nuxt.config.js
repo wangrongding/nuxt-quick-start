@@ -51,11 +51,11 @@ export default {
     },
 
     // Global CSS: https://go.nuxtjs.dev/config-css
-    css: ["element-ui/lib/theme-chalk/index.css"],
+    css: ["element-ui/lib/theme-chalk/index.css", "@/assets/style/reset.less"],
 
     // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
     // 插件
-    plugins: ["@/plugins/element-ui", "~/plugins/custom-plugin.js"],
+    plugins: ["~/plugins/custom-plugin.js", "@/plugins/element-ui"],
 
     // Auto import components: https://go.nuxtjs.dev/config-components
     components: true,

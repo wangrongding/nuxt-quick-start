@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
+    "dev": "node --max-old-space-size=4096 node_modules/nuxt/bin/nuxt.js nuxt",
     "serve": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
@@ -17,6 +18,8 @@
     "@nuxtjs/axios": "^5.13.6",
     "core-js": "^3.15.1",
     "element-ui": "^2.15.2",
+    "less": "^4.1.1",
+    "less-loader": "7.3.0",
     "nuxt": "^2.15.7"
   },
   "devDependencies": {

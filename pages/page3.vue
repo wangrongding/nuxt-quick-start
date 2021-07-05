@@ -1,6 +1,6 @@
 <template>
     <!-- <Tutorial /> -->
-    <div>汪荣顶</div>
+    <div>页面3</div>
 </template>
 
 <script>
@@ -8,8 +8,7 @@ export default {
     async asyncData({ $axios }) {
         // await $axios.$get();
     },
-    mounted() {
-    },
+    mounted() {},
     methods: {},
 };
 </script>

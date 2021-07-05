@@ -1,4 +1,4 @@
-# nuxt-demo2
+# nuxt-quick-start
 
 ## Build Setup
 
@@ -7,7 +7,7 @@
 $ yarn install
 
 # serve with hot reload at localhost:3000
-$ yarn dev
+$ yarn serve
 
 # build for production and launch server
 $ yarn build
@@ -41,7 +41,6 @@ Layouts are a great help when you want to change the look and feel of your Nuxt 
 
 More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/layouts).
 
-
 ### `pages`
 
 This directory contains your application views and routes. Nuxt will read all the `*.vue` files inside this directory and setup Vue Router automatically.
@@ -67,3 +66,10 @@ More information about the usage of this directory in [the documentation](https:
 This directory contains your Vuex store files. Creating a file in this directory automatically activates Vuex.
 
 More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/store).
+
+### 注意
+
+```
+## 注意
+<!-- less-loader 安装7.3.0版本,高版本不兼容,会报错 this.getOptions is not a function -->
+```
