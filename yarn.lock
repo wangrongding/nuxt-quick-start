@@ -4330,7 +4330,7 @@ hable@^3.0.0:
 
 hard-source-webpack-plugin@^0.13.1:
   version "0.13.1"
-  resolved "https://registry.nlark.com/hard-source-webpack-plugin/download/hard-source-webpack-plugin-0.13.1.tgz#a99071e25b232f1438a5bc3c99f10a3869e4428e"
+  resolved "https://registry.npm.taobao.org/hard-source-webpack-plugin/download/hard-source-webpack-plugin-0.13.1.tgz#a99071e25b232f1438a5bc3c99f10a3869e4428e"
   integrity sha1-qZBx4lsjLxQ4pbw8mfEKOGnkQo4=
   dependencies:
     chalk "^2.4.1"

@@ -1,3 +1,4 @@
+const HardSourceWebpackPlugin = import("hard-source-webpack-plugin"); // 为模块提供中间缓存，效率提升很大
 export default {
     server: {
         port: 9521,
@@ -48,6 +49,13 @@ export default {
             // 引入css样式文件
             // { rel: "stylesheet", type: "text/css", href: "" },
         ],
+        script: [
+            {
+                src: "/js/flexible.js",
+                type: "text/javascript",
+                charset: "utf-8",
+            },
+        ],
     },
 
     // Global CSS: https://go.nuxtjs.dev/config-css
@@ -72,5 +80,6 @@ export default {
     // Build Configuration: https://go.nuxtjs.dev/config-build
     build: {
         transpile: [/^element-ui/],
+        plugins: [new HardSourceWebpackPlugin()],
     },
 };
