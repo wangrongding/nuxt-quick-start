@@ -1,3 +1,4 @@
+// eslint-disable-next-line
 const HardSourceWebpackPlugin = import("hard-source-webpack-plugin"); // 为模块提供中间缓存，效率提升很大
 export default {
     server: {
@@ -80,6 +81,6 @@ export default {
     // Build Configuration: https://go.nuxtjs.dev/config-build
     build: {
         transpile: [/^element-ui/],
-        plugins: [new HardSourceWebpackPlugin()],
+        // plugins: [new HardSourceWebpackPlugin()],
     },
 };

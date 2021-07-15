@@ -2,8 +2,8 @@
     <div class="page-container">
         <div class="content">
             <div class="title">
-                <p>公司概述</p>
-                <p>Company overview</p>
+                <p style="font-size: 28px">公司概述</p>
+                <p style="font-size: 12px">Company overview</p>
             </div>
             <div class="introduce">
                 <p>
@@ -57,7 +57,7 @@ export default {
 .page-container {
     height: 100vh;
     width: 100vw;
-    padding-top: 100px;
+    padding-top: 250px;
     box-sizing: border-box;
     background-color: #2c1410;
     color: white;

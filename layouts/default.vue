@@ -8,7 +8,7 @@
             </div>
             <div class="logo-container">
                 <img class="logo-bg" src="../assets/images/bg.png" alt="" />
-                <nuxt-link class="menu-item" to="/">
+                <nuxt-link class="menu-item" to="/home">
                     <img class="logo" src="../assets/images/logo.png" alt="" />
                 </nuxt-link>
             </div>
@@ -56,9 +56,8 @@ export default {
 
 .page-container {
     display: flex;
-    justify-content: center;
+    // justify-content: center;
     flex-direction: column;
-
     .head {
         height: 50px;
         // border: 1px solid #c3c3c3;
@@ -72,7 +71,7 @@ export default {
         width: 100vw;
         z-index: 100;
         .nav-left {
-            background: rgba(68, 45, 40, 0.84945);
+            background: rgba(55, 28, 23, 0.75);
             border-bottom: 1px solid #777777f2;
             flex: 1;
             text-align: right;
@@ -80,7 +79,7 @@ export default {
             justify-content: flex-end;
         }
         .nav-right {
-            background: rgba(68, 45, 40, 0.84945);
+            background: rgba(55, 28, 23, 0.75);
             border-bottom: 1px solid #777777f2;
             flex: 1;
             text-align: left;
@@ -92,7 +91,7 @@ export default {
             padding: 0 30px;
             display: inline-block;
             line-height: 50px;
-            // margin: 0 20px;
+            margin: 0 25px;
             text-decoration: none;
             color: white;
             font-size: 20px;

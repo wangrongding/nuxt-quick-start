@@ -1,64 +1,59 @@
 <template>
-    <!-- <Tutorial /> -->
-    <div class="page-container">
-        <el-carousel height="100vh" indicator-position="none" arrow="hover">
-            <el-carousel-item v-for="(item, index) in imageList" :key="index">
-                <div class="describe">
-                    <span style="margin-right: 50px">{{ index + 1 + "/" + imageList.length }}</span>
-                    <span>{{ item.name }}</span>
-                    {{ item.name + index }}
-                </div>
-                <!-- <img style="height: 100vh" class="image-item" :src="item.url" alt="" /> -->
-                <el-image
-                    style="width: 100vw; height: 100vh"
-                    :src="item.url"
-                    fit="cover"
-                ></el-image>
-            </el-carousel-item>
-        </el-carousel>
+    <div class="page-container" @click="toHome">
+        <p class="title" style="font-size: 35px">京北组 · 一家专业高端效果图设计表现公司</p>
+        <p class="title" style="font-size: 25px">
+            We are a profession a high-end rendering design company
+        </p>
     </div>
 </template>
 
 <script>
 export default {
-    async asyncData({ $axios }) {},
+    components: {},
+    layout: "singleLayout",
+    props: {},
     data() {
-        return {
-            imageList: [
-                {
-                    url: "https://yabu.imgix.net/https%3A%2F%2Fyabupushelberg.com%2Fuploads%2Fhome%2Fyabupushelberg_ports_1961_shanghai_011.jpg?auto=compress%2Cformat&cs=srgb&dpi=72&fit=max&position=50%2050&q=80&w=1200&s=98a6bb2bbb0fc2ab6f3e1546f9fb02e6",
-                    name: "xxxxx",
-                },
-                {
-                    url: "https://yabu.imgix.net/https%3A%2F%2Fyabupushelberg.com%2Fuploads%2Fhome%2Fyabupushelberg_oiseau__DSC8945.jpg?auto=compress%2Cformat&cs=srgb&dpi=72&fit=max&position=50%2050&q=80&w=1200&s=c7a289ca645b40d2a7d2c9a6d3581eab",
-                    name: "xxxxx",
-                },
-                {
-                    url: "https://yabu.imgix.net/https%3A%2F%2Fyabupushelberg.com%2Fuploads%2Fhome%2Fyabupushelberg_las_alcobas_napa_valley_23.jpg?auto=compress%2Cformat&cs=srgb&dpi=72&fit=max&position=50%2050&q=80&w=1200&s=62226833bf85d30f70eeda3241d5be35",
-                    name: "xxxxx",
-                },
-            ],
-        };
+        return {};
     },
+    computed: {},
+    watch: {},
+    created() {},
     mounted() {
-        // sessionStorage.setItem("init", true);
+        setTimeout(() => {
+            this.$router.push("/home");
+        }, 3000);
     },
-    methods: {},
+    methods: {
+        toHome() {
+            this.$router.push("/home");
+        },
+    },
 };
 </script>
-<style lang="less" scoped>
+
+<style scoped lang="less">
 .page-container {
-    .image-item {
-        width: 100%;
-    }
-    .describe {
-        position: absolute;
-        left: 100px;
-        bottom: 100px;
-        color: white;
-        font-size: 24px;
-        font-weight: bold;
-        z-index: 999;
+    user-select: none;
+    cursor: pointer;
+    width: 100vw;
+    height: 100vh;
+    background-color: #2c1410;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    .title {
+        width: 750px;
+        text-align: justify;
+        height: 50px;
+        &:after {
+            display: inline-block;
+            content: "";
+            width: 100%;
+            height: 0;
+            overflow: hidden;
+        }
     }
 }
 </style>
