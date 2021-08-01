@@ -2,7 +2,7 @@
     <div class="page-container">
         <div class="head">
             <div class="nav-left">
-                <nuxt-link class="menu-item" to="/page1">公司简介</nuxt-link>
+                <nuxt-link class="menu-item" to="/introduction">公司简介</nuxt-link>
                 <nuxt-link class="menu-item" to="/page2">酒店会所</nuxt-link>
                 <nuxt-link class="menu-item" to="/page3">文化办公</nuxt-link>
             </div>
@@ -15,7 +15,7 @@
             <div class="nav-right">
                 <nuxt-link class="menu-item" to="/page4">商业地产</nuxt-link>
                 <nuxt-link class="menu-item" to="/page5">私人住宅</nuxt-link>
-                <nuxt-link class="menu-item" to="/page6">业务合作</nuxt-link>
+                <nuxt-link class="menu-item" to="/cooperation">业务合作</nuxt-link>
             </div>
         </div>
         <div class="main">
@@ -53,7 +53,6 @@ export default {
 * {
     user-select: none;
 }
-
 .page-container {
     display: flex;
     // justify-content: center;

@@ -59,11 +59,14 @@ export default {
     width: 100vw;
     padding-top: 250px;
     box-sizing: border-box;
-    background-color: #2c1410;
+    background-image: url("../assets/images/introduction.jpg");
     color: white;
     .content {
+        background-color: #2c14106c;
         margin: 0 auto;
-        max-width: 1300px;
+        width: 100%;
+        padding: 100px 200px;
+        box-sizing: border-box;
         display: flex;
         justify-content: center;
         flex-direction: row;

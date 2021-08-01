@@ -51,11 +51,11 @@ export default {
             // { rel: "stylesheet", type: "text/css", href: "" },
         ],
         script: [
-            {
-                src: "/js/flexible.js",
+            /*  {
+                src: "~/static/js/flexible.js",
                 type: "text/javascript",
                 charset: "utf-8",
-            },
+            }, */
         ],
     },
 
