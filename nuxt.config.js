@@ -1,6 +1,7 @@
 // eslint-disable-next-line
 const HardSourceWebpackPlugin = import("hard-source-webpack-plugin"); // 为模块提供中间缓存，效率提升很大
 export default {
+    target: "static", // default is 'server'
     server: {
         port: 9521,
         host: "localhost",
